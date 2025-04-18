@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades para la Vida - Estrategia Colibrí Dorado</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (para iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/colibri-dorado-icon.png">
+    <!-- Hoja de Estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Encabezado y Navegación Principal -->
+    <header>
+        <nav class="main-nav">
+            <a href="#home" class="nav-logo">
+                <img src="images/colibri-dorado-icon.png" alt="Icono Colibrí Dorado" class="logo-icon">
+                <span>El Colibrí Dorado</span>
+            </a>
+            <button class="burger-menu" id="burger-menu" aria-label="Abrir menú de habilidades">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#info-general">Estrategia</a></li>
+                <li><a href="#juego-rol">Juego de Rol</a></li>
+                <li><a href="#quienes-somos">Quiénes Somos</a></li>
+                <li><a href="#apoyanos">Apóyanos</a></li>
+                <li><a href="#contacto">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sidebar para Habilidades para la Vida -->
+    <aside class="sidebar collapsed" id="sidebar">
+        <button class="close-sidebar" id="close-sidebar" aria-label="Cerrar menú de habilidades">×</button>
+        <h3><span class="sidebar-title-text">Habilidades</span></h3>
+        <ul class="sidebar-menu">
+            <li><a href="#skill-autoconocimiento" data-skill="autoconocimiento"><i class="fas fa-user-cog" title="Autoconocimiento"></i> <span class="skill-name">Autoconocimiento</span></a></li>
+            <li><a href="#skill-empatia" data-skill="empatia"><i class="fas fa-hand-holding-heart" title="Empatía"></i> <span class="skill-name">Empatía</span></a></li>
+            <li><a href="#skill-comunicacion" data-skill="comunicacion"><i class="fas fa-comments" title="Comunicación Asertiva"></i> <span class="skill-name">Comunicación Asertiva</span></a></li>
+            <li><a href="#skill-relaciones" data-skill="relaciones"><i class="fas fa-users" title="Relaciones Interpersonales"></i> <span class="skill-name">Relaciones Interp.</span></a></li>
+            <li><a href="#skill-toma-decisiones" data-skill="toma-decisiones"><i class="fas fa-map-signs" title="Toma de Decisiones"></i> <span class="skill-name">Toma de Decisiones</span></a></li>
+            <li><a href="#skill-solucion-problemas" data-skill="solucion-problemas"><i class="fas fa-puzzle-piece" title="Solución de Problemas"></i> <span class="skill-name">Solución de Problemas</span></a></li>
+            <li><a href="#skill-pensamiento-creativo" data-skill="pensamiento-creativo"><i class="fas fa-lightbulb" title="Pensamiento Creativo"></i> <span class="skill-name">Pensamiento Creativo</span></a></li>
+            <li><a href="#skill-pensamiento-critico" data-skill="pensamiento-critico"><i class="fas fa-brain" title="Pensamiento Crítico"></i> <span class="skill-name">Pensamiento Crítico</span></a></li>
+            <li><a href="#skill-manejo-emociones" data-skill="manejo-emociones"><i class="fas fa-theater-masks" title="Manejo de Emociones"></i> <span class="skill-name">Manejo de Emociones</span></a></li>
+            <li><a href="#skill-manejo-estres" data-skill="manejo-estres"><i class="fas fa-spa" title="Manejo de Estrés"></i> <span class="skill-name">Manejo de Estrés</span></a></li>
+        </ul>
+    </aside>
+
+    <!-- Contenido Principal -->
+    <main id="main-content">
+
+        <!-- Sección Banner (Home) -->
+        <section id="home" class="banner">
+            <div class="banner-content">
+                <h1>Desarrolla tu Potencial con Habilidades para la Vida</h1>
+                <p>Una estrategia innovadora para adolescentes, jóvenes, educadores y familias en Bogotá y el mundo.</p>
+                <a href="#info-general" class="cta-button">Descubre Más</a>
+            </div>
+            <div class="banner-image-container">
+                 <img src="images/colibri-banner-grande.png" alt="Ilustración artística del Colibrí Dorado sobrevolando Bogotá" class="banner-image">
+            </div>
+        </section>
+
+        <!-- 1. Información General de la Estrategia -->
+        <section id="info-general" class="content-section">
+            <h2>Nuestra Estrategia: Cultivando Habilidades Esenciales</h2>
+            <p>Creemos en el poder transformador de las Habilidades para la Vida (HpV) definidas por la OMS. Nuestra estrategia integral combina aprendizaje experiencial, lúdica y tecnología para equipar a los jóvenes con las herramientas necesarias para navegar los desafíos del siglo XXI con resiliencia, creatividad y empatía.</p>
+            <div class="card-container">
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="images/estrategia-pilares.jpg" alt="Diagrama abstracto con iconos de cerebro, corazón y manos conectadas">
+                      <h3>Pilares Fundamentales</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h4>Enfoque Integral</h4>
+                      <p>Integramos distintas disciplinas para un desarrollo completo: cognitivo, emocional y social.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="images/aprendizaje-activo.jpg" alt="Jóvenes sonriendo y colaborando en un taller práctico">
+                      <h3>Aprendizaje Activo</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h4>Metodología Práctica</h4>
+                      <p>Fomentamos la apropiación del conocimiento a través de retos, juegos de rol y experiencias vivenciales significativas.</p>
+                    </div>
+                  </div>
+                </div>
+                 <div class="flip-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="images/mentoria-apoyo.jpg" alt="Una profesional escuchando atentamente a un joven en un entorno seguro">
+                      <h3>Apoyo Profesional</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h4>Acompañamiento Experto</h4>
+                      <p>Ofrecemos sesiones de orientación con psicólogos profesionales para personalizar el aprendizaje y abordar necesidades individuales.</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Información y Enlace al Juego de Rol -->
+        <section id="juego-rol" class="content-section highlight-section">
+             <h2>¡La Aventura te Espera: Reto del Colibrí Dorado!</h2>
+            <p>Sumérgete en 'Reto del Colibrí Dorado', un emocionante juego de rol y retos urbanos ambientado en las vibrantes calles de Bogotá. Descifra enigmas, supera obstáculos y colabora con tu 'parche' mientras pones en práctica tus Habilidades para la Vida en escenarios realistas y desafiantes.</p>
+             <div class="card-container">
+                 <div class="flip-card large-card">
+                  <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                      <img src="images/juego-mapa-bogota.jpg" alt="Mapa estilizado de Bogotá con iconos de retos en puntos clave como Monserrate, La Candelaria, etc.">
+                      <h3>Explora Bogotá como Nunca Antes</h3>
+                    </div>
+                    <div class="flip-card-back">
+                      <h4>Misterios Urbanos</h4>
+                      <p>Desde el enigma de la Quinta de Bolívar hasta la desinformación cerca del Cementerio Central, cada rincón esconde una pista y un desafío para tus habilidades.</p>
+                      <p style="margin-top: 1rem; font-weight: bold;">¿Aceptas el reto?</p>
+                    </div>
+                  </div>
+                </div>
+             </div>
+             <a href="https://colibridoradobta.github.io/elColibriDorado.github.io/" target="_blank" class="cta-button game-link-button">¡Juega Ahora!</a>
+             <p class="small-note">*El enlace abrirá la plataforma del juego en una nueva pestaña.</p>
+        </section>
+
+        <!-- 3. Quiénes Somos -->
+        <section id="quienes-somos" class="content-section">
+            <h2>Nuestro Equipo: Profesionales comprometidos</h2>
+            <p>Conoce a algunos de los profesionales expertos en psicología y educación que guían nuestras orientaciones, listos para acompañarte en tu proceso de crecimiento y desarrollo de Habilidades para la Vida.</p>
+            <div class="team-container">
+                <div class="mentor-card">
+                    <img src="images/mentor-1.jpg" alt="Foto Profesional Álvaro Y. Jiménez" class="mentor-photo">
+                    <h3>Ps. Álvaro Y. Jiménez</h3>
+                    <p class="mentor-contact"><i class="fas fa-envelope"></i> aljimenez.n@gmail.com</p>
+                    <p class="mentor-contact"><i class="fab fa-whatsapp"></i> +57 300 123 4567</p>
+                    <p class="mentor-quote">"Descubrir tus fortalezas es el primer paso para construir la vida que deseas."</p>
+                </div>
+                 <div class="mentor-card">
+                    <img src="images/mentor-2.jpg" alt="Foto Profesional Ps. Angélica Jiménez" class="mentor-photo">
+                    <h3>Ps. Angélica Jiménez</h3>
+                    <p class="mentor-contact"><i class="fas fa-envelope"></i> arena_30@yahoo.com</p>
+                    <p class="mentor-contact"><i class="fab fa-whatsapp"></i> +57 310 987 6543</p>
+                    <p class="mentor-quote">"La empatía y la comunicación abren puertas que la indiferencia cierra."</p>
+                </div>
+                 <div class="mentor-card">
+                    <img src="images/mentor-3.jpg" alt="Foto Profesional Mg. Sofia Castro" class="mentor-photo">
+                    <h3>Mg. Sofia Castro</h3>
+                    <p class="mentor-contact"><i class="fas fa-envelope"></i> sofia.castro@colibridorado.co</p>
+                    <p class="mentor-contact"><i class="fab fa-whatsapp"></i> +57 320 111 2233</p>
+                    <p class="mentor-quote">"Cada desafío es una oportunidad para crecer si aprendes a manejar tus emociones."</p>
+                </div>
+                 <div class="mentor-card">
+                    <img src="images/mentor-4.jpg" alt="Foto Profesional Lic. David Jiménez" class="mentor-photo">
+                    <h3>Lic. David Jiménez</h3>
+                    <p class="mentor-contact"><i class="fas fa-envelope"></i> david.jimenez@colibridorado.co</p>
+                    <p class="mentor-contact"><i class="fab fa-whatsapp"></i> +57 315 444 5566</p>
+                    <p class="mentor-quote">"El pensamiento crítico y creativo son tus mejores aliados para navegar el futuro."</p>
+                </div>
+            </div>
+        </section>
+
+         <!-- Contenedor para Secciones de Habilidades (Ocultas por defecto) -->
+         <div id="skills-content-wrapper">
+
+             <!-- 1. Autoconocimiento -->
+            <section id="skill-autoconocimiento" class="content-section skill-section hidden-skill">
+                <h2><span class="skill-number">1</span> Autoconocimiento</h2>
+                 <p><strong>Concepto Clave:</strong> Entender quién eres: tus fortalezas, debilidades, gustos, disgustos, valores, motivaciones y emociones. Es la base para construir una identidad sólida.</p>
+                 <div class="skill-details-grid">
+                     <div class="skill-activity">
+                         <h4>Actividad de Apropiación: "El Inventario del Yo"</h4>
+                         <div class="flip-card small-card">
+                           <div class="flip-card-inner">
+                             <div class="flip-card-front">
+                               <img src="images/autoconocimiento-inventario.jpg" alt="Collage abstracto con símbolos de fortaleza, valores, emociones">
+                               <h5>Descubre tus Tesoros</h5>
+                             </div>
+                             <div class="flip-card-back">
+                               <h6>¿Cómo Hacerlo?</h6>
+                               <p>Divide una hoja en 4: Superpoderes (Fortalezas), Kriptonita (Debilidades), Brújula (Valores), Botiquín (Auto-cuidado). Llena y comparte.</p>
+                             </div>
+                           </div>
+                         </div>
+                         <p>Una herramienta visual para mapear tus características internas.</p>
+                     </div>
+                     <div class="skill-activity">
+                         <h4>Aprendizaje Experiencial: "Diario de Fortalezas"</h4>
+                         <div class="flip-card small-card">
+                           <div class="flip-card-inner">
+                             <div class="flip-card-front">
+                               <img src="images/autoconocimiento-diario.jpg" alt="Primer plano de alguien escribiendo reflexivamente en un diario">
+                                <h5>Encuéntralas en Acción</h5>
+                             </div>
+                             <div class="flip-card-back">
+                               <h6>El Desafío</h6>
+                               <p>Durante una semana, anota cada día una situación donde usaste una fortaleza y cómo te sentiste. Reconoce tu poder.</p>
+                             </div>
+                           </div>
+                         </div>
+                         <p>Conecta tus fortalezas identificadas con tus acciones diarias.</p>
+                     </div>
+                    <div class="skill-discussion">
+                        <h4>Preguntas para Discusión Grupal:</h4>
+                        <ul>
+                            <li>¿Qué fue lo más sorprendente que descubriste sobre ti?</li>
+                            <li>¿Cómo conocer tus debilidades te puede ayudar en vez de limitarte?</li>
+                            <li>¿De qué manera tus valores guían tus decisiones diarias (amigos, estudios)?</li>
+                        </ul>
+                    </div>
+                     <div class="skill-tips">
+                        <h4>Tips y Recomendaciones:</h4>
+                        <ul>
+                            <li>Sé honesto/a y evita juzgarte. ¡Eres un ser en construcción!</li>
+                            <li>Pide feedback constructivo a personas de confianza.</li>
+                            <li>Reconoce que cambias y evolucionas. ¡Permítetelo!</li>
+                            <li>Celebra tus fortalezas, incluso las que parecen pequeñas.</li>
+                        </ul>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- 2. Empatía -->
+            <section id="skill-empatia" class="content-section skill-section hidden-skill">
+                <h2><span class="skill-number">2</span> Empatía</h2>
+                <p><strong>Concepto Clave:</strong> La capacidad de ponerse en el lugar de otra persona, entender sus sentimientos y perspectivas, incluso si son diferentes a las tuyas. Es fundamental para las relaciones sanas.</p>
+                <div class="skill-details-grid">
+                    <div class="skill-activity">
+                        <h4>Actividad de Apropiación: "Galería de Perspectivas"</h4>
+                        <div class="flip-card small-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="images/empatia-galeria.jpg" alt="Mosaico de rostros con diferentes expresiones ambiguas">
+                              <h5>Descifra las Historias</h5>
+                            </div>
+                            <div class="flip-card-back">
+                              <h6>¿Cómo Hacerlo?</h6>
+                              <p>Observa imágenes de personas en situaciones ambiguas. En grupo, discute qué podrían sentir y por qué. Explora múltiples posibilidades.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p>Entrena tu capacidad de ver más allá de lo evidente en las emociones ajenas.</p>
+                    </div>
+                    <div class="skill-activity">
+                        <h4>Aprendizaje Experiencial: "Escucha Activa en la Calle"</h4>
+                         <div class="flip-card small-card">
+                           <div class="flip-card-inner">
+                             <div class="flip-card-front">
+                               <img src="images/empatia-escucha.jpg" alt="Dos personas conversando atentamente en un parque">
+                                <h5>Conéctate Realmente</h5>
+                             </div>
+                             <div class="flip-card-back">
+                               <h6>El Desafío</h6>
+                               <p>Observa discretamente en un lugar público o practica la escucha activa (sin interrumpir, reflejando) con un amigo sobre algo importante para él/ella.</p>
+                             </div>
+                           </div>
+                         </div>
+                        <p>Practica la presencia y la escucha genuina en interacciones reales.</p>
+                    </div>
+                    <div class="skill-discussion">
+                        <h4>Preguntas para Discusión Grupal:</h4>
+                        <ul>
+                            <li>¿Cuándo te resulta más difícil ser empático/a? ¿Por qué?</li>
+                            <li>¿Puede la empatía ayudar a resolver conflictos? ¿Cómo?</li>
+                            <li>¿Qué diferencia hay entre entender a alguien y estar de acuerdo?</li>
+                            <li>¿Cómo te sientes cuando alguien es empático contigo?</li>
+                        </ul>
+                    </div>
+                    <div class="skill-tips">
+                        <h4>Tips y Recomendaciones:</h4>
+                        <ul>
+                            <li>Escucha más de lo que hablas. Presta atención plena.</li>
+                            <li>Haz preguntas abiertas para entender mejor ("¿Cómo te hizo sentir eso?").</li>
+                            <li>Valida los sentimientos ajenos, aunque no los compartas ("Entiendo que te sientas así").</li>
+                            <li>Observa el lenguaje corporal; comunica mucho.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 3. Comunicación Asertiva -->
+            <section id="skill-comunicacion" class="content-section skill-section hidden-skill">
+                <h2><span class="skill-number">3</span> Comunicación Asertiva</h2>
+                <p><strong>Concepto Clave:</strong> Expresar tus ideas, necesidades y sentimientos de forma clara, directa, honesta y respetuosa, sin ser pasivo (no decir nada) ni agresivo (imponerse). Defender tus derechos respetando los de los demás.</p>
+                <div class="skill-details-grid">
+                    <div class="skill-activity">
+                        <h4>Actividad de Apropiación: "El Semáforo de la Comunicación"</h4>
+                        <div class="flip-card small-card">
+                          <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                              <img src="images/comunicacion-semaforo.jpg" alt="Un semáforo con iconos de comunicación pasiva, agresiva y asertiva">
+                              <h5>Identifica los Estilos</h5>
+                            </div>
+                            <div class="flip-card-back">
+                              <h6>¿Cómo Hacerlo?</h6>
+                              <p>Clasifica frases o escenarios en Rojo (Agresivo), Amarillo (Pasivo) o Verde (Asertivo). Discute y reformula las rojas/amarillas a verde.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <p>Aprende a reconocer y diferenciar los estilos de comunicación.</p>
+                    </div>
+                    <div class="skill-activity">
+                        <h4>Aprendizaje Experiencial: "El Desafío del 'No' Respetuoso"</h4>
+                         <div class="flip-card small-card">
+                           <div class="flip-card-inner">
+                             <div class="flip-card-front">
+                               <img src="images/comunicacion-norespetuoso.jpg" alt="Persona haciendo un gesto amable pero firme de 'parar' o 'no'">
+                                <h5>Pon Límites Sanos</h5>
+                             </div>
+                             <div class="flip-card-back">
+                               <h6>El Desafío</h6>
+                               <p>Identifica una situación donde dirías 'sí' por compromiso. Practica decir 'no' de forma asertiva (agradece, explica brevemente, ofrece alternativa si aplica). Anota cómo fue.</p>
+                             </div>
+                           </div>
+                         </div>
+                        <p>Entrena la habilidad de decir 'no' cuando es necesario, sin culpa.</p>
+                    </div>
+                    <div class="skill-discussion">
+                        <h4>Preguntas para Discusión Grupal:</h4>
+                        <ul>
+                            <li>¿Por qué a veces cuesta ser asertivo/a? ¿Qué miedos hay?</li>
+                            <li>¿Cuáles son los beneficios de comunicarte asertivamente?</li>
+                            <li>¿Cómo influye el lenguaje corporal en la asertividad?</li>
+                            <li>¿En qué situaciones de Bogotá es vital ser asertivo/a?</li>
+                        </ul>
+                    </div>
+                    <div class="skill-tips">
+                        <h4>Tips y Recomendaciones:</h4>
+                        <ul>
+                            <li>Usa frases en primera persona ("Yo siento...", "Yo necesito...").</li>
+                            <li>Sé claro/a y específico/a en tu petición o límite.</li>
+                            <li>Mantén un tono de voz calmado pero firme.</li>
+                            <li>Practica la fórmula: "Cuando tú haces X, yo me siento Y, y me gustaría Z".</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Relaciones Interpersonales -->
+            <section id="skill-relaciones" class="content-section skill-section hidden-skill">
+                 <h2><span class="skill-number">4</span> Relaciones Interpersonales</h2>
+                 <p><strong>Concepto Clave:</strong> Habilidad para establecer y mantener relaciones significativas y saludables (amistad, familia, pareja, etc.). Implica cooperación, respeto mutuo, límites y manejo constructivo de conflictos.</p>
+                 <div class="skill-details-grid">
+                     <div class="skill-activity">
+                         <h4>Actividad de Apropiación: "El Círculo de Confianza"</h4>
+                         <div class="flip-card small-card">
+                           <div class="flip-card-inner">
+                             <div class="flip-card-front">
+                               <img src="images/relaciones-circulo.jpg" alt="Diagrama de círculos concéntricos representando niveles de relaciones">
+                               <h5>Mapea tus Conexiones</h5>
+                             </div>
+                             <div class="flip-card-back">
+                               <h6>¿Cómo Hacerlo?</h6>
+                               <p>Dibuja círculos. En el centro, tú. En los exteriores, ubica a personas importantes según cercanía. Reflexiona sobre la calidad y el apoyo en cada círculo.</p>
+                             </div>
+                           </div>
+                         </div>
+                         <p>Visualiza tu red de apoyo y la naturaleza de tus vínculos.</p>
+                     </div>
+                     <div class="skill-activity">
+                         <h4>Aprendizaje Experiencial: "Proyecto Colaborativo Relámpago"</h4>
+                          <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/relaciones-proyecto.jpg" alt="Grupo de jóvenes trabajando juntos en una tarea creativa con recursos limitados">
+                                 <h5>Construyan Juntos</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>El Desafío</h6>
+                                <p>En grupo, realicen una tarea corta con recursos limitados (torre de papel, rap corto, etc.). Observen y discutan cómo colaboraron y manejaron desacuerdos.</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Experimenta la dinámica de equipo y la gestión de relaciones en acción.</p>
+                     </div>
+                     <div class="skill-discussion">
+                         <h4>Preguntas para Discusión Grupal:</h4>
+                         <ul>
+                             <li>¿Qué ingredientes necesita una amistad/relación sana?</li>
+                             <li>¿Qué son los límites y por qué son importantes?</li>
+                             <li>¿Cómo diferenciar una discusión constructiva de una pelea destructiva?</li>
+                             <li>¿Cómo influye la cultura bogotana/colombiana en las relaciones?</li>
+                         </ul>
+                     </div>
+                     <div class="skill-tips">
+                         <h4>Tips y Recomendaciones:</h4>
+                         <ul>
+                             <li>Comunica tus expectativas y escucha las de los demás.</li>
+                             <li>Respeta los límites ajenos y establece los tuyos.</li>
+                             <li>Muestra aprecio y reconoce las cosas buenas de los demás.</li>
+                             <li>Aborda los conflictos con calma y buscando soluciones, no culpables.</li>
+                         </ul>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- 5. Toma de Decisiones -->
+            <section id="skill-toma-decisiones" class="content-section skill-section hidden-skill">
+                 <h2><span class="skill-number">5</span> Toma de Decisiones</h2>
+                 <p><strong>Concepto Clave:</strong> El proceso de evaluar diferentes opciones y elegir un curso de acción de manera informada y reflexiva, considerando las posibles consecuencias a corto y largo plazo.</p>
+                 <div class="skill-details-grid">
+                     <div class="skill-activity">
+                         <h4>Actividad de Apropiación: "El Laboratorio de Decisiones"</h4>
+                          <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/decision-laboratorio.jpg" alt="Diagrama de flujo mostrando pasos para tomar una decisión">
+                                <h5>Analiza tus Opciones</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>¿Cómo Hacerlo?</h6>
+                                <p>Ante un dilema (ir a fiesta, copiar, etc.): Define, Lista Opciones, Analiza Pros/Contras/Consecuencias, Considera Valores, Decide y Planea.</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Aplica un método estructurado para decisiones importantes.</p>
+                     </div>
+                     <div class="skill-activity">
+                         <h4>Aprendizaje Experiencial: "Planificador de Metas"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/decision-metas.jpg" alt="Persona escribiendo metas SMART en un planificador">
+                                 <h5>Decide Cómo Lograrlo</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>El Desafío</h6>
+                                <p>Elige una meta pequeña para la semana. Usa el proceso de decisión para planificar CÓMO lograrla (pasos, recursos, obstáculos, plan B).</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Practica la toma de decisiones en la planificación de objetivos.</p>
+                     </div>
+                     <div class="skill-discussion">
+                         <h4>Preguntas para Discusión Grupal:</h4>
+                         <ul>
+                             <li>¿Cómo influyen las emociones (miedo, entusiasmo) en tus decisiones?</li>
+                             <li>¿Y la presión de grupo? ¿Cómo manejarla?</li>
+                             <li>¿Cuándo decidir rápido y cuándo tomarse tiempo?</li>
+                             <li>¿Cómo sabes si tomaste una "buena" decisión (incluso si el resultado no es ideal)?</li>
+                         </ul>
+                     </div>
+                     <div class="skill-tips">
+                         <h4>Tips y Recomendaciones:</h4>
+                         <ul>
+                             <li>Busca información fiable antes de decidir.</li>
+                             <li>Considera las consecuencias a corto y largo plazo para ti y otros.</li>
+                             <li>Confía en tus valores como guía.</li>
+                             <li>Aprende de decisiones pasadas, sin culpas excesivas.</li>
+                         </ul>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- 6. Solución de Problemas -->
+            <section id="skill-solucion-problemas" class="content-section skill-section hidden-skill">
+                 <h2><span class="skill-number">6</span> Solución de Problemas</h2>
+                 <p><strong>Concepto Clave:</strong> La habilidad para identificar un problema o conflicto, analizar sus causas, generar diversas soluciones posibles, elegir la más adecuada e implementarla, y evaluar los resultados.</p>
+                 <div class="skill-details-grid">
+                     <div class="skill-activity">
+                         <h4>Actividad de Apropiación: "Kit del Detective de Problemas"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/problemas-detective.jpg" alt="Iconos de lupa, herramientas, foco, engranajes representando solución de problemas">
+                                <h5>Desarma el Enigma</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>¿Cómo Hacerlo?</h6>
+                                <p>Usa un modelo (IDEAL: Identificar, Definir, Explorar, Actuar, Logros). Aplícalo a un "caso" (problema común) usando un mapa mental.</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Aprende un método paso a paso para abordar cualquier problema.</p>
+                     </div>
+                     <div class="skill-activity">
+                         <h4>Aprendizaje Experiencial: "Desafío del Puente Roto"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/problemas-puente.jpg" alt="Grupo tratando de construir un puente improvisado con materiales limitados">
+                                 <h5>Supera el Obstáculo</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>El Desafío</h6>
+                                <p>En equipo, lograr un objetivo (transportar algo) superando un obstáculo físico/simulado con recursos limitados. ¡Usen el método!</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Pon a prueba tu habilidad para resolver problemas en un reto práctico.</p>
+                     </div>
+                     <div class="skill-discussion">
+                         <h4>Preguntas para Discusión Grupal:</h4>
+                         <ul>
+                             <li>¿Cuál es la diferencia entre un problema y un conflicto?</li>
+                             <li>¿Qué otras habilidades (empatía, creatividad) ayudan a resolver problemas?</li>
+                             <li>¿Cuándo es apropiado pedir ayuda para resolver un problema?</li>
+                             <li>¿Cómo manejar conflictos donde parece que nadie tiene toda la razón?</li>
+                         </ul>
+                     </div>
+                     <div class="skill-tips">
+                         <h4>Tips y Recomendaciones:</h4>
+                         <ul>
+                             <li>Define bien el problema antes de buscar soluciones.</li>
+                             <li>Genera muchas ideas (brainstorming) sin juzgar al principio.</li>
+                             <li>Considera varias perspectivas del problema.</li>
+                             <li>No te rindas si la primera solución falla, ¡adapta y sigue intentando!</li>
+                         </ul>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- 7. Pensamiento Creativo -->
+            <section id="skill-pensamiento-creativo" class="content-section skill-section hidden-skill">
+                 <h2><span class="skill-number">7</span> Pensamiento Creativo</h2>
+                 <p><strong>Concepto Clave:</strong> La capacidad de pensar de forma original, generar ideas nuevas, encontrar soluciones novedosas y ver las cosas desde perspectivas diferentes. ¡No es solo para artistas!</p>
+                 <div class="skill-details-grid">
+                     <div class="skill-activity">
+                         <h4>Actividad de Apropiación: "Conexiones Inesperadas"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/creativo-conexiones.jpg" alt="Ilustración abstracta de ideas conectándose de formas sorprendentes">
+                                <h5>Une los Puntos Raros</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>¿Cómo Hacerlo?</h6>
+                                <p>Toma dos palabras al azar (Bicicleta, Ajiaco). Encuentra una conexión creativa, inventa una historia o diseña algo que las combine.</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Entrena tu mente para encontrar relaciones originales.</p>
+                     </div>
+                     <div class="skill-activity">
+                         <h4>Aprendizaje Experiencial: "Reinventando lo Cotidiano"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/creativo-cotidiano.jpg" alt="Un objeto común (ej. un ladrillo) transformado en algo artístico o útil de forma inesperada">
+                                 <h5>Mira con Ojos Nuevos</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>El Desafío</h6>
+                                <p>Elige algo común de Bogotá (fila del bus, sonido ambulante). En grupo, ideen 5 formas creativas de mejorarlo, cambiarlo o usarlo diferente.</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Aplica la creatividad para innovar en tu entorno diario.</p>
+                     </div>
+                     <div class="skill-discussion">
+                         <h4>Preguntas para Discusión Grupal:</h4>
+                         <ul>
+                             <li>¿Qué bloquea tu creatividad (miedo, rutina, perfeccionismo)?</li>
+                             <li>¿Cómo se puede "entrenar" el pensamiento creativo?</li>
+                             <li>¿En qué situaciones no artísticas es útil ser creativo?</li>
+                             <li>¿Bogotá inspira o limita la creatividad? ¿Por qué?</li>
+                         </ul>
+                     </div>
+                     <div class="skill-tips">
+                         <h4>Tips y Recomendaciones:</h4>
+                         <ul>
+                             <li>Sé curioso/a, haz preguntas constantemente.</li>
+                             <li>Combina ideas existentes de formas nuevas.</li>
+                             <li>No temas equivocarte, los errores son parte del proceso.</li>
+                             <li>Sal de tu rutina, explora nuevos lugares e ideas.</li>
+                         </ul>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- 8. Pensamiento Crítico -->
+            <section id="skill-pensamiento-critico" class="content-section skill-section hidden-skill">
+                 <h2><span class="skill-number">8</span> Pensamiento Crítico</h2>
+                 <p><strong>Concepto Clave:</strong> La habilidad de analizar información y experiencias de manera objetiva y racional. Implica cuestionar supuestos, identificar sesgos, evaluar argumentos y sacar conclusiones fundamentadas.</p>
+                 <div class="skill-details-grid">
+                     <div class="skill-activity">
+                         <h4>Actividad de Apropiación: "Filtro Anti-Fake News"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/critico-filtro.jpg" alt="Icono de un escudo protegiendo un cerebro de información falsa">
+                                <h5>Detecta la Verdad</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>¿Cómo Hacerlo?</h6>
+                                <p>Analiza noticias (reales/falsas) usando un checklist: ¿Fuente? ¿Evidencia? ¿Hechos vs. Opinión? ¿Sesgos? ¿Emocional vs. Racional?</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Desarrolla herramientas para evaluar la información que consumes.</p>
+                     </div>
+                     <div class="skill-activity">
+                         <h4>Aprendizaje Experiencial: "Análisis de Influencia"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/critico-influencia.jpg" alt="Persona mirando críticamente un celular con posts de redes sociales">
+                                 <h5>¿Qué te Quieren Vender?</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>El Desafío</h6>
+                                <p>Elige un post popular, influencer o publicidad. Analiza: ¿Qué busca? ¿Qué técnicas usa? ¿Qué omite? ¿Intereses ocultos?</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Aplica el pensamiento crítico al mundo digital y la persuasión.</p>
+                     </div>
+                     <div class="skill-discussion">
+                         <h4>Preguntas para Discusión Grupal:</h4>
+                         <ul>
+                             <li>¿Por qué es crucial pensar críticamente hoy en día?</li>
+                             <li>¿Cómo se relaciona con tomar buenas decisiones?</li>
+                             <li>¿Se puede ser crítico sin ser negativo o cínico?</li>
+                             <li>¿Cómo identificar tus propios sesgos al analizar algo?</li>
+                         </ul>
+                     </div>
+                     <div class="skill-tips">
+                         <h4>Tips y Recomendaciones:</h4>
+                         <ul>
+                             <li>Siempre pregunta "¿Por qué?" y "¿Cómo lo sabes?".</li>
+                             <li>Busca diferentes fuentes y puntos de vista.</li>
+                             <li>Distingue entre hechos comprobables y opiniones personales.</li>
+                             <li>Sé consciente de cómo las emociones pueden nublar tu juicio.</li>
+                         </ul>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- 9. Manejo de Emociones -->
+            <section id="skill-manejo-emociones" class="content-section skill-section hidden-skill">
+                 <h2><span class="skill-number">9</span> Manejo de Emociones</h2>
+                 <p><strong>Concepto Clave:</strong> Reconocer tus emociones y las de los demás, entender cómo influyen en el comportamiento y ser capaz de responder a ellas de manera apropiada y constructiva.</p>
+                 <div class="skill-details-grid">
+                     <div class="skill-activity">
+                         <h4>Actividad de Apropiación: "Termómetro Emocional"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/emociones-termometro.jpg" alt="Ilustración de un termómetro midiendo la intensidad de una emoción">
+                                <h5>Mide la Intensidad</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>¿Cómo Hacerlo?</h6>
+                                <p>Para una emoción (rabia, ansiedad), identifica señales físicas/mentales en cada nivel de intensidad. Brainstormea estrategias saludables para "bajarla".</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Aprende a identificar y gestionar la intensidad de tus emociones.</p>
+                     </div>
+                     <div class="skill-activity">
+                         <h4>Aprendizaje Experiencial: "Bitácora Emocional"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/emociones-bitacora.jpg" alt="Página de diario con anotaciones sobre sentimientos y situaciones">
+                                 <h5>Conoce tus Patrones</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>El Desafío</h6>
+                                <p>Durante unos días, anota momentos de emoción intensa: Situación, Emoción, Sensación física, Qué hiciste. Observa sin juzgar.</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Aumenta la conciencia sobre tus disparadores y respuestas emocionales.</p>
+                     </div>
+                     <div class="skill-discussion">
+                         <h4>Preguntas para Discusión Grupal:</h4>
+                         <ul>
+                             <li>¿Hay emociones "buenas" y "malas"? ¿O todas son información?</li>
+                             <li>¿Cómo saber si una emoción te ayuda o te perjudica?</li>
+                             <li>¿Qué pasa cuando ignoras o reprimes tus emociones?</li>
+                             <li>¿Cómo influyen las emociones en tus decisiones y comunicación?</li>
+                         </ul>
+                     </div>
+                     <div class="skill-tips">
+                         <h4>Tips y Recomendaciones:</h4>
+                         <ul>
+                             <li>Nombra lo que sientes ("Estoy sintiendo frustración").</li>
+                             <li>Respira profundo para calmar la respuesta física inmediata.</li>
+                             <li>Busca formas saludables de expresar la emoción (hablar, escribir, moverte).</li>
+                             <li>Date permiso de sentir, pero elige cómo actuar.</li>
+                         </ul>
+                     </div>
+                 </div>
+            </section>
+
+            <!-- 10. Manejo de Estrés -->
+            <section id="skill-manejo-estres" class="content-section skill-section hidden-skill">
+                 <h2><span class="skill-number">10</span> Manejo de Estrés</h2>
+                 <p><strong>Concepto Clave:</strong> Reconocer las fuentes de estrés en tu vida, entender sus efectos físicos y psicológicos, y aplicar estrategias efectivas para prevenirlo o reducir su impacto negativo.</p>
+                 <div class="skill-details-grid">
+                     <div class="skill-activity">
+                         <h4>Actividad de Apropiación: "Mapa de Estrés y Rutas de Escape"</h4>
+                         <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/estres-mapa.jpg" alt="Mapa mental con 'Estrés' en el centro y ramas para fuentes, señales y soluciones">
+                                <h5>Navega la Tensión</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>¿Cómo Hacerlo?</h6>
+                                <p>Crea un mapa mental: Centro=Estrés. Ramas=Fuentes (ej. tráfico, exámenes), Señales (físicas, emocionales), Rutas de Escape Saludables.</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Identifica tus estresores personales y recursos para afrontarlos.</p>
+                     </div>
+                     <div class="skill-activity">
+                         <h4>Aprendizaje Experiencial: "Plan Anti-Estrés Personal"</h4>
+                          <div class="flip-card small-card">
+                            <div class="flip-card-inner">
+                              <div class="flip-card-front">
+                                <img src="images/estres-plan.jpg" alt="Persona relajada meditando o haciendo ejercicio ligero en un entorno tranquilo">
+                                 <h5>Diseña tu Calma</h5>
+                              </div>
+                              <div class="flip-card-back">
+                                <h6>El Desafío</h6>
+                                <p>Identifica 1-2 estresores actuales. Diseña un plan realista con estrategias enfocadas en el problema y en la emoción. ¡Implementa una!</p>
+                              </div>
+                            </div>
+                          </div>
+                         <p>Crea y prueba tu propio conjunto de herramientas anti-estrés.</p>
+                     </div>
+                     <div class="skill-discussion">
+                         <h4>Preguntas para Discusión Grupal:</h4>
+                         <ul>
+                             <li>¿Cómo afecta el estrés tu cuerpo y mente a largo plazo?</li>
+                             <li>¿Qué estrategias anti-estrés son populares en Bogotá (saludables/no)?</li>
+                             <li>¿Cómo diferenciar estrés normal de estrés excesivo?</li>
+                             <li>¿Cuándo es importante buscar ayuda profesional para el estrés?</li>
+                         </ul>
+                     </div>
+                     <div class="skill-tips">
+                         <h4>Tips y Recomendaciones:</h4>
+                         <ul>
+                             <li>Identifica tus señales tempranas de estrés.</li>
+                             <li>Incorpora actividades relajantes y placenteras en tu rutina.</li>
+                             <li>Aprende a decir "no" para evitar sobrecargarte.</li>
+                             <li>Muévete: el ejercicio físico es un gran liberador de estrés.</li>
+                             <li>Habla con alguien de confianza o un profesional.</li>
+                         </ul>
+                     </div>
+                 </div>
+            </section>
+         </div> <!-- Fin de #skills-content-wrapper -->
+
+
+        <!-- 5. Apóyanos -->
+        <section id="apoyanos" class="content-section highlight-section">
+            <h2>Apoya Nuestra Misión</h2>
+            <p>Tu contribución nos permite seguir desarrollando programas, actividades efectivas, herramientas innovadoras y ofrecer asesorías accesibles para más jóvenes en Bogotá. ¡Ayúdanos a cultivar las Habilidades para la Vida que transformarán el futuro!</p>
+            <div class="donation-container">
+                <p><strong>Haz clic en el botón para apoyar:</strong></p>
+                <a href="URL_PLATAFORMA_DONACION" target="_blank" class="cta-button donation-button">
+                    <i class="fas fa-heart"></i> Donar Ahora
+                </a>
+                <p style="margin-top:1rem; font-size: 0.9rem;">(Serás redirigido a nuestra plataforma segura de donaciones)</p>
+                <!-- O si tienes un código de embed: -->
+                <!-- <div class="donation-widget-embed"> PEGAR_CODIGO_EMBED_AQUI </div> -->
+            </div>
+        </section>
+
+        <!-- 6. Contáctanos -->
+        <section id="contacto" class="content-section contact-section">
+             <h2>Hablemos</h2>
+             <p>¿Tienes preguntas, quieres colaborar o necesitas más información sobre nuestros programas y asesorías? Completa el formulario y nuestro equipo se pondrá en contacto contigo.</p>
+             <p><a href="#" id="privacy-policy-link" target="_blank" rel="noopener noreferrer">Política de Privacidad</a></p>
+             <div class="form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfcQwKhxysCa_aU6XnBI48_URvu6KUQrPPXic995_X9-O-F7Q/viewform?embedded=true" width="100%" height="600" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+        <div class="footer-content">
+            <div class="social-media">
+                <a href="URL_YOUTUBE" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="URL_INSTAGRAM" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="URL_X" target="_blank" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                <a href="URL_TIKTOK" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p class="copyright">© 2025 Colibrí Dorado Habilidades para la Vida. Todos los derechos reservados.</p>
+            <p class="corporate-info">Una iniciativa de [Nombre de tu Organización/Colectivo] | Bogotá, Colombia</p>
+            <p class="footer-links">
+                <a href="#privacidad">Política de Privacidad</a> | <a href="#terminos">Términos de Uso</a>
+                 <!-- Deberás crear secciones o páginas separadas para estas políticas -->
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+
+    <!-- ========================
+     MODAL POLÍTICA DE PRIVACIDAD
+     ======================== -->
+<div class="modal-overlay" id="privacy-modal-overlay"></div>
+<div class="modal" id="privacy-modal">
+    <button class="close-modal" id="close-privacy-modal" aria-label="Cerrar Política de Privacidad">×</button>
+    <h2>Política de Privacidad y Tratamiento de Datos Personales</h2>
+    <div class="modal-content">
+        <p><strong>Última Actualización:</strong> [Fecha de la última actualización, ej: Octubre 26, 2023]</p>
+
+        <p>En [Nombre de tu Organización/Colectivo/Iniciativa Colibrí Dorado HpV] (en adelante, "Nosotros"), estamos comprometidos con la protección de tu privacidad y el tratamiento responsable de tus datos personales, en cumplimiento de la Ley 1581 de 2012 de Protección de Datos Personales y sus decretos reglamentarios en Colombia.</p>
+
+        <h4>1. Responsable del Tratamiento:</h4>
+        <p>El responsable del tratamiento de los datos personales recolectados a través del formulario de contacto de este sitio web es [Nombre de tu Organización/Colectivo], con domicilio en Bogotá D.C., Colombia. Puedes contactarnos a través del correo electrónico: [Tu Correo Electrónico de Contacto para Privacidad].</p>
+
+        <h4>2. Finalidad del Tratamiento:</h4>
+        <p>Los datos personales que nos proporcionas a través del formulario de contacto (nombre, correo electrónico, teléfono opcional y mensaje) serán utilizados única y exclusivamente para las siguientes finalidades:</p>
+        <ul>
+            <li>Gestionar tu consulta, solicitud, comentario o propuesta.</li>
+            <li>Establecer comunicación contigo para dar respuesta a tu requerimiento.</li>
+            <li>Realizar seguimiento a la comunicación iniciada a través del formulario.</li>
+        </ul>
+        <p>No utilizaremos tus datos para fines diferentes a los aquí descritos, como envío de publicidad o marketing, sin tu consentimiento explícito previo.</p>
+
+        <h4>3. Datos Personales Recopilados:</h4>
+        <p>Recolectamos los siguientes datos a través del formulario:</p>
+        <ul>
+            <li>Nombre Completo</li>
+            <li>Correo Electrónico</li>
+            <li>Número de Teléfono (si decides proporcionarlo)</li>
+            <li>Contenido del mensaje que nos envías</li>
+        </ul>
+        <p>Te recomendamos no incluir información sensible (como datos de salud, financieros detallados, etc.) en el campo de mensaje si no es estrictamente necesario para tu consulta.</p>
+
+        <h4>4. Derechos del Titular (ARCO):</h4>
+        <p>Como titular de los datos personales, tienes derecho a:</p>
+        <ul>
+            <li><strong>Acceder:</strong> Conocer qué datos tenemos sobre ti.</li>
+            <li><strong>Rectificar:</strong> Actualizar o corregir tus datos si son inexactos o incompletos.</li>
+            <li><strong>Cancelar (Supresión):</strong> Solicitar la eliminación de tus datos cuando consideres que ya no son necesarios para la finalidad con la que fueron recolectados o cuando hayas revocado tu consentimiento (aplican excepciones legales).</li>
+            <li><strong>Oponerte:</strong> Oponerte al tratamiento de tus datos para fines específicos.</li>
+            <li>Revocar el consentimiento otorgado para el tratamiento.</li>
+            <li>Presentar quejas ante la Superintendencia de Industria y Comercio (SIC) por infracciones a la ley de protección de datos.</li>
+        </ul>
+        <p>Para ejercer estos derechos, puedes enviar una solicitud escrita al correo electrónico [Tu Correo Electrónico de Contacto para Privacidad], indicando claramente tu nombre, tu solicitud y los datos de contacto para recibir respuesta.</p>
+
+        <h4>5. Seguridad y Confidencialidad:</h4>
+        <p>Hemos adoptado medidas técnicas, humanas y administrativas razonables para proteger la información recolectada y evitar su pérdida, uso indebido, acceso no autorizado, alteración o divulgación. La información enviada a través del formulario de Google Forms se rige también por las políticas de seguridad de Google.</p>
+
+        <h4>6. Transferencia y Transmisión de Datos:</h4>
+        <p>No transferiremos ni transmitiremos tus datos personales a terceros, nacionales o internacionales, sin tu consentimiento previo, explícito e informado, salvo en los casos permitidos o exigidos por la ley colombiana.</p>
+
+        <h4>7. Vigencia del Tratamiento:</h4>
+        <p>Tus datos personales serán tratados durante el tiempo necesario para cumplir con la finalidad para la cual fueron recolectados, es decir, para gestionar y responder a tu consulta. Una vez cumplida la finalidad, podrán ser conservados únicamente para fines estadísticos (de forma anonimizada) o para cumplir con obligaciones legales, y posteriormente serán eliminados de forma segura.</p>
+
+        <h4>8. Cambios a la Política de Privacidad:</h4>
+        <p>Nos reservamos el derecho de modificar esta Política de Privacidad en cualquier momento. Cualquier cambio será informado a través de este sitio web. Te recomendamos revisar periódicamente esta política.</p>
+
+        <p>Al hacer clic en la casilla de aceptación en el formulario de contacto, manifiestas haber leído, entendido y aceptado los términos de esta Política de Privacidad y autorizas el tratamiento de tus datos personales para las finalidades aquí descritas.</p>
+    </div>
+</div>
+<!-- ========================
+     FIN MODAL POLÍTICA DE PRIVACIDAD
+     ======================== -->
+
+</body>
+</html>
